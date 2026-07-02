@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Register - CipherDataHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" style="max-width:480px;margin:60px auto;">
+    <h2>Create your account</h2>
+    <form id="registerForm" class="auth-form">
+      <label>Name</label>
+      <input id="name" class="form-input" required>
+      <label>Email</label>
+      <input id="email" type="email" class="form-input" required>
+      <label>Password</label>
+      <input id="password" type="password" class="form-input" required>
+      <label>Confirm Password</label>
+      <input id="confirm" type="password" class="form-input" required>
+      <button class="staB" type="submit">Register</button>
+    </form>
+    <p style="margin-top:12px">Already have an account? <a href="login.html">Sign in</a></p>
+  </div>
+  <script src="auth.js"></script>
+  <script>
+    document.getElementById('registerForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name=document.getElementById('name').value.trim();
+      const email=document.getElementById('email').value.trim();
+      const password=document.getElementById('password').value;
+      const confirm=document.getElementById('confirm').value;
+      if(password!==confirm){ alert('Passwords do not match'); return; }
+      const res=registerUser(name,email,password);
+      if(!res.ok){ alert(res.msg); return; }
+      alert('Registered — you are logged in');
+      window.location.href='index.html';
+    });
+  </script>
+</body>
+</html>

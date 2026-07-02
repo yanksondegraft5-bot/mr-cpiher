@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheper Info</title>
+</head>
+<body>
+   <section class="networks">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge-blue">📶 SUPPORTED NETWORKS</span>
+                <h2>All Major Ghana Networks</h2>
+                <p class="section-subtitle">MTN, Telecel, AT iShare, AT BigTime and Xpress all in one place.</p>
+            </div>
+
+            <div class="networks-grid">
+                <div class="network-card">
+                    <div class="network-logo network-logo-img mtn-bg">
+                        <img src="mtn-logo.svg" alt="MTN logo">
+                    </div>
+                    <h3>MTN Ghana</h3>
+                    <span class="status-active">● Active</span>
+                </div>
+                <div class="network-card">
+                    <div class="network-logo network-logo-img telecel-bg">
+                        <img src="telecel-logo.svg" alt="Telecel logo">
+                    </div>
+                    <h3>Telecel</h3>
+                    <span class="status-active">● Active</span>
+                </div>
+                <div class="network-card">
+                    <div class="network-logo at-bg">iSH</div>
+                    <h3>AT iShare</h3>
+                    <span class="status-active">● Active</span>
+                </div>
+                <div class="network-card">
+                    <div class="network-logo bigtime-bg">BIG</div>
+                    <h3>AT BigTime</h3>
+                    <span class="status-active">● Active</span>
+                </div>
+                <div class="network-card">
+                    <div class="network-logo xpress-bg">XPS</div>
+                    <h3>Xpress</h3>
+                    <span class="status-active">● Active</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge-outline">📋 HOW IT WORKS</span>
+                <h2>Start in 4 Simple Steps</h2>
+                <p class="section-subtitle">Get your data business running in minutes.</p>
+            </div>
+
+            <div class="steps-container">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h3>Create Account</h3>
+                    <p>Register for free in under 2 minutes. No documents required to start.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h3>Fund Wallet</h3>
+                    <p>Add money via Paystack using MoMo or card payment instantly.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h3>Buy Data</h3>
+                    <p>Select a network, pick a bundle, enter the phone number, and done.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <h3>Earn Money</h3>
+                    <p>Set your own profit margins, build your store, and grow your sales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <button class="staB">start now</button>
+    </section>
+    <style>
+        /* Networks Section */
+.networks {
+    padding: 80px 0;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.badge-blue {
+    background-color: rgba(0, 86, 179, 0.1);
+    color: var(--blue);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.section-subtitle {
+    color: var(--text-muted);
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.networks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.network-card {
+    background: #FFFFFF;
+    border: 1px solid #EAEAEA;
+    border-radius: 12px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.network-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+}
+
+.network-logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.network-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* Network Specific Brand Colors */
+.mtn-bg { background-color: var(--yellow); color: var(--black); }
+.telecel-bg { background-color: var(--red); }
+.at-bg { background-color: var(--blue); }
+.bigtime-bg { background-color: #D32F2F; }
+.xpress-bg { background-color: #00A896; }
+
+.network-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: var(--black);
+}
+
+.status-active {
+    color: #2E7D32;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* How It Works Section */
+.how-it-works {
+    padding: 80px 0;
+    background-color: var(--gray-light);
+    text-align: center;
+}
+
+.badge-outline {
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.steps-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+    position: relative;
+}
+
+/* Line connecting steps on desktop screens */
+@media (min-width: 992px) {
+    .steps-container::before {
+        content: '';
+        position: absolute;
+        top: 35px;
+        left: 10%;
+        width: 80%;
+        height: 2px;
+        background-color: rgba(0, 86, 179, 0.2);
+        z-index: 1;
+    }
+}
+
+.step-item {
+    position: relative;
+    z-index: 2;
+    background: transparent;
+    padding: 10px;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(29, 29, 119);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 10px rgba(0, 86, 179, 0.3);
+}
+
+.step-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: var(--black);
+}
+
+.step-item p {
+    font-size: 0.9rem;
+    color: #555555;
+    max-width: 240px;
+    margin: 0 auto;
+}
+
+/* Responsive fixes for small screens */
+@media (max-width: 768px) {
+    .networks-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on mobile instead of row */
+    }
+    .steps-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+.staB {
+    padding: 14px 35px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #0057ff, #00bfff);
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 87, 255, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.staB::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.3);
+    transform: skewX(-25deg);
+    transition: 0.6s;
+}
+
+.staB:hover::before {
+    left: 100%;
+}
+
+.staB:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 87, 255, 0.6);
+}
+
+.staB:active {
+    transform: scale(0.95);
+}
+    </style> 
+</body>
+</html>

@@ -1,0 +1,6 @@
+<svg width="220" height="60" viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg">
+  <rect x="8" y="8" width="44" height="44" rx="12" fill="#0056B3"/>
+  <path d="M22 20h10a6 6 0 1 1 0 12H22v-4h10a2 2 0 1 0 0-4H22z" fill="#FFD200"/>
+  <text x="64" y="32" font-family="Segoe UI, Tahoma, Geneva, Verdana, sans-serif" font-size="22" font-weight="700" fill="#FFFFFF">SuperData</text>
+  <text x="64" y="48" font-family="Segoe UI, Tahoma, Geneva, Verdana, sans-serif" font-size="11" font-weight="600" letter-spacing="2" fill="#A0A0A0">BUY &amp; RESALE</text>
+</svg>
